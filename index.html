@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1 class="app-title">Weather Forecast</h1>
+        
+        <div class="search-section">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="cityInput" 
+                placeholder="Enter city name"
+                aria-label="City name input"
+            >
+            <button class="search-button" id="searchButton">Get Weather</button>
+        </div>
+
+        <div class="weather-result" id="weatherResult"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

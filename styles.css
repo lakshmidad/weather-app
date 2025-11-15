@@ -1,0 +1,155 @@
+/* ============================================
+   WEATHER FORECAST APPLICATION - STYLES
+   ============================================
+   General styling with semantic class names
+   and proper organization for maintainability
+   ============================================ */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container Styles */
+.weather-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header/Title Styles */
+.app-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Search Section Styles */
+.search-section {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.search-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: #0056b3;
+}
+
+.search-button:active {
+    transform: scale(0.98);
+}
+
+/* Weather Result Styles */
+.weather-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Weather Information Display Styles */
+.weather-condition {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.temperature-display {
+    font-size: 48px;
+    color: #007bff;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.weather-detail {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* Error and Message Styles */
+.error-message {
+    color: #d32f2f;
+    padding: 10px;
+    background: #ffebee;
+    border-left: 4px solid #d32f2f;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.loading-message {
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .weather-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .app-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .temperature-display {
+        font-size: 36px;
+    }
+
+    .weather-condition {
+        font-size: 20px;
+    }
+
+    .search-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input,
+    .search-button {
+        width: 100%;
+    }
+}
